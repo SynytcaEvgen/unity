@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @@include('./part/head_link.html')
+    <title>Unity Trucking Inc.</title>
+</head>
+<body>
+    <main>
+        <header>
+            <div class="header_wrapper">
+                <div class="contact_logo">
+                    <div class="contact_logo__list">
+                        <div class="contact_logo__item">
+                            <a href="tel:+111111111" class="link_to">
+                                <div class="icon_wrapper">
+                                    <i class="icon-phone"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="contact_logo__item">
+                            <a href="mailto:expample@gmail.com" class="link_to">
+                                <div class="icon_wrapper">
+                                    <i class="icon-email"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="contact_logo__item">
+                            <a href="https://www.instagram.com" class="link_to">
+                                <div class="icon_wrapper">
+                                    <i class="icon-instagram"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="contact_logo__item">
+                            <a href="https://www.facebook.com" class="link_to">
+                                <div class="icon_wrapper">
+                                    <i class="icon-facebook"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <div class="bg_slider">
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                    @@include('./part/slide_item.html',{
+                        "img": "Header_slide_0.webp",
+                        "img_alt": "slide_1"
+                    })
+              </div>
+            </div>
+        </div>
+    </main>  
+</body>
+</html>

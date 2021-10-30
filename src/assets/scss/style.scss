@@ -1,0 +1,25 @@
+@import './montserrat';
+@import './icon-fonts';
+@import './variables/variables';
+@import './reset-html';
+
+@import './blocks/header/header.scss';
+@import './blocks/bg-slider/bg-slider';
+@import './blocks/contact-logo/contact-logo';
+
+@import './blocks/footer/footer';
+
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from { opacity: 0.1;}
+    to { opacity: 1;}
+}
