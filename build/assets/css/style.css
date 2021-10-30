@@ -367,48 +367,9 @@ table {
 }
 
 /* Reset end */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 150px;
-  padding: 0 100px;
-}
-.header__left-block {
-  display: flex;
-  justify-content: space-between;
-  min-width: 550px;
-}
-.header__logo {
-  max-width: 170px;
-}
-.header__logo img {
-  width: 100%;
-}
-.header__links {
-  display: flex;
-  align-items: center;
-}
-.header__link {
-  position: relative;
-  margin-right: 45px;
-  font-weight: bold;
-  font-size: 18px;
-  color: #303030;
-}
-.header__link:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 110%;
-  left: -5%;
-  bottom: -1px;
-  z-index: -1;
-  height: 8px;
-  background: #54ED39;
-}
-.header__link:last-child {
-  margin-right: 0;
+.header__wrapper {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .bg_slider {
@@ -416,8 +377,9 @@ table {
   top: 0;
   left: 0;
   width: 100%;
-  height: 940px;
+  max-height: 940px;
   z-index: -1;
+  overflow: hidden;
 }
 .bg_slider::before {
   content: "";
@@ -434,6 +396,34 @@ table {
   justify-content: center;
   align-items: center;
   gap: 60px;
+}
+.main_content {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main_content__logo {
+  font-size: 75px;
+  margin-bottom: 140px;
+}
+.main_content__slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main_content__slogan * {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.main_content__slogan *:last-child {
+  margin-bottom: 0;
+}
+
+.first_screen {
+  border-bottom: 106px solid #A21B1B;
 }
 
 .footer {
@@ -461,6 +451,10 @@ table {
   text-align: right;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 .hide {
   display: none;
 }
@@ -481,4 +475,35 @@ table {
   to {
     opacity: 1;
   }
+}
+.img_wrapper {
+  width: 100%;
+  line-height: 0;
+  height: 100%;
+}
+.img_wrapper img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.icon_wrapper i {
+  color: #fff;
+  font-size: inherit;
+}
+
+.text_head {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 1.35;
+  letter-spacing: 0.05em;
+}
+
+.text_h_18 {
+  font-size: 18px;
+  line-height: 1.35;
+  letter-spacing: 0.05em;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }

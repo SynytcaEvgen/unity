@@ -6,9 +6,13 @@
 @import './blocks/header/header.scss';
 @import './blocks/bg-slider/bg-slider';
 @import './blocks/contact-logo/contact-logo';
+@import './blocks/main-content/main-content';
+@import './blocks/first-screen/first-screen';
 
 @import './blocks/footer/footer';
-
+body{
+    font-family: "Montserrat", sans-serif;
+}
 .hide{
     display: none;
 }
@@ -22,4 +26,33 @@
 @keyframes fade {
     from { opacity: 0.1;}
     to { opacity: 1;}
+}
+.img_wrapper{
+    width: 100%;
+    line-height: 0;
+    height: 100%;
+    img{
+        width: 100%;
+        object-fit: contain;
+    }
+}
+.icon_wrapper{
+    i{
+        color:#fff;
+        font-size: inherit;
+    }
+}
+.text_head{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 1.35;
+    letter-spacing: 0.05em;
+}
+.text_h_18{
+    font-size: 18px;
+    line-height: 1.35;
+    letter-spacing: 0.05em;
+}
+.uppercase{
+    text-transform: uppercase;
 }
