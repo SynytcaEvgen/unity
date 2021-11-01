@@ -50,11 +50,13 @@ body{
     font-size: 40px;
     line-height: 1.35;
     letter-spacing: 0.05em;
+    white-space: normal;
 }
 .text_h_18{
     font-size: 18px;
     line-height: 1.35;
     letter-spacing: 0.05em;
+    white-space: normal;
 }
 .title_block{
     font-weight: bold;
@@ -62,15 +64,22 @@ body{
     line-height: 37px;
     letter-spacing: 0.05em;
     color: inherit;
+    white-space: normal;
 }
 .def_text{
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
     color: inherit;
+    white-space: normal;
 }
 .uppercase{
     text-transform: uppercase;
+}
+.container{
+    max-width: 1352px;
+    padding: 0 16px;
+    margin: 0 auto;
 }
 
 .iti__flag {
@@ -82,4 +91,23 @@ body{
     .iti__flag {
         background-image: url("path/to/flags@2x.png");
     }
+}
+@media only screen and (max-width: 992px) {
+    .text_head {
+        font-size: 30px;
+    }
+
+    .text_h_18 {
+        font-size: 14px;
+    }
+
+    .title_block {
+        font-size: 25px;
+        line-height: 27px;
+    }
+    .def_text {
+        font-size: 10px;
+        line-height: 13px;
+    }
+
 }

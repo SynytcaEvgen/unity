@@ -11,6 +11,7 @@
         transform: translate(-50%, 100%);
         border: 160px solid transparent;
         border-top: 70px solid $primary;
+        z-index: 1;
     }
     &__list{
         max-width: 1170px;
@@ -38,4 +39,30 @@
             }
         }
     }
+}
+
+@media only screen and (max-width: 1023px) {
+    .question {
+        padding: 40px 0;
+        z-index: 2;
+
+        &::after {
+            border: 100px solid transparent;
+            border-top: 50px solid $primary;
+        }
+
+        &__list {
+            flex-direction: column;
+        }
+
+        &__item {
+
+            .question__text {
+                .text {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
 }

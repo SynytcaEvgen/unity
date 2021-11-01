@@ -1,9 +1,9 @@
-import Swiper from 'swiper';
+import Swiper from 'swiper/bundle';
 import intlTelInput from 'intl-tel-input';
 import { onlyNubmerInput } from './services/sumbol-separator';
 import sValidation from './services/simple-validation';
 
-import 'swiper/css/bundle';
+import 'swiper/css';
 import 'intl-tel-input/build/css/intlTelInput.css';
 
 window.addEventListener('DOMContentLoaded', init);
@@ -28,9 +28,9 @@ function init() {
     // swiper
     const swiper = new Swiper('.slider_time_bg', {
         autoplay: {
-            delay: 4000,
+            delay: 4500,
         },
-        speed: 1000,
+        speed: 1200,
         loop: true
 
     });

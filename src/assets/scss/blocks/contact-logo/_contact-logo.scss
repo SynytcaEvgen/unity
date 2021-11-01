@@ -8,5 +8,10 @@
     }
     &__item{
         color: #fff;
+        transition: 0.4s ease;
+        &:hover{
+            color: $primary;
+            transition: 0.4s ease;
+        }
     }
 }

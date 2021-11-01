@@ -23,6 +23,7 @@
         max-width: 568px;
         margin: 0 auto 40px;
         color: #000;
+        white-space: normal;
         .text{
             text-align: center;
             &.second{
@@ -62,6 +63,13 @@
             border: 1px solid $secondary;
             background-color: #fff;
             width: 100%;
+            transition: 0.3s ease;
+            &:hover,
+            &:focus{
+                box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+                rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+                transition: 0.3s ease;
+            }
         }
         &.checkbox{
             margin-bottom: 40px;
@@ -114,6 +122,12 @@
         line-height: 17px;
         padding: 22px 20px 21px;
         background-color: $secondary;
+        transition: 0.3s ease;
+        &:hover{
+            background-color: transparent;
+            transition: 0.3s ease;
+            color: #000;
+        }
     }
     // Flag plugin set def style
     .iti{

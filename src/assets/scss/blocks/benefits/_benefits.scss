@@ -22,11 +22,13 @@
         padding: 40px 25px;
         border: 1px solid rgba(11, 34, 92, 0.05);
         min-width: 170px;
+        max-width: 170px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 20px;
+        transition: 0.3s ease;
         .icon_wrapper{
             color: $secondary;
             font-size: 40px;
@@ -41,6 +43,23 @@
                     color: rgba(0, 0, 0, 0.5);
                 }
             }
+        }
+    }
+}
+@media only screen and (max-width: 1366px){
+    .benefits {
+        margin: -166px 16px 100px;
+        &__list {
+            flex-wrap: wrap;
+        }
+    }
+}
+@media only screen and (max-width: 767px) {
+    .benefits {
+        margin: -80px 16px 80px;
+        padding: 30px 35px;
+        &__list {
+            justify-content: center;
         }
     }
 }
