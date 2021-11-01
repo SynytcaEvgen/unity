@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'icon-font';
-    src: url('../fonts/icon-font/icon-font.eot?jp4npk');
-    src: url('../fonts/icon-font/icon-font.eot?jp4npk#iefix') format('embedded-opentype'),
-        url('../fonts/icon-font/icon-font.ttf?jp4npk') format('truetype'),
-        url('../fonts/icon-font/icon-font.woff?jp4npk') format('woff'),
-        url('../fonts/icon-font/icon-font.svg?jp4npk#icon-font') format('svg');
+    src: url('../fonts/icon-font/icon-font.eot?gpxxfx');
+    src: url('../fonts/icon-font/icon-font.eot?gpxxfx#iefix') format('embedded-opentype'),
+        url('../fonts/icon-font/icon-font.ttf?gpxxfx') format('truetype'),
+        url('../fonts/icon-font/icon-font.woff?gpxxfx') format('woff'),
+        url('../fonts/icon-font/icon-font.svg?gpxxfx#icon-font') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -12,7 +12,7 @@
 
 [class^="icon-"],
 [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
+    /* use !important to prevent issues with browser extensions that change ../fonts/icon-font */
     font-family: 'icon-font' !important;
     speak: never;
     font-style: normal;
@@ -24,6 +24,10 @@
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-benefit_increas:before {
+    content: "\e901";
 }
 
 .icon-truck_ref:before {
@@ -62,7 +66,7 @@
     content: "\e909";
 }
 
-.icon-benefit_dispatsh:before {
+.icon-benefit_dispatch:before {
     content: "\e90a";
 }
 

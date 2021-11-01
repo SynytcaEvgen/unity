@@ -1,5 +1,61 @@
+import Swiper from 'swiper';
+import intlTelInput from 'intl-tel-input';
+import { onlyNubmerInput } from './services/sumbol-separator';
+import sValidation from './services/simple-validation';
+
+import 'swiper/css/bundle';
+import 'intl-tel-input/build/css/intlTelInput.css';
+
 window.addEventListener('DOMContentLoaded', init);
 
 function init() {
-    console.log('js works');
+
+    // __corect style dispatch block
+    const dispatchItem = document.querySelectorAll('.dispatch__item');
+
+    if (dispatchItem) {
+        if (dispatchItem.length % 3 == 2) {
+            dispatchItem[dispatchItem.length - 1].classList.add('last_two');
+            dispatchItem[dispatchItem.length - 2].classList.add('last_two');
+        }
+        if (dispatchItem.length % 3 == 1) {
+            dispatchItem[dispatchItem.length - 1].classList.add('last_one');
+        }
+    }
+
+    // __corect style dispatch block
+
+    // swiper
+    const swiper = new Swiper('.slider_time_bg', {
+        autoplay: {
+            delay: 4000,
+        },
+        speed: 1000,
+        loop: true
+
+    });
+    // swiper
+
+    const inputPhone = document.querySelector(".phone_input");
+    intlTelInput(inputPhone, {
+        separateDialCode: true,
+    });
+
+    onlyNubmerInput('.only_number');
+    const formBtn = document.querySelector('.submit_form');
+    if (formBtn) {
+        formBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            sValidation();
+            if (sValidation()) {
+                alert('We will contact you ASAP');
+                formBtn.form.reset();
+            };
+        });
+    };
+    
+
+    
+
+
 }

@@ -45,7 +45,15 @@ gulp.task("build-js", () => {
                             }
                           }
                         ]
-                      }
+                    },
+                    module: {
+                      rules: [
+                        {
+                          test: /\.css$/i,
+                          use: ["style-loader", "css-loader"],
+                        },
+                      ],
+                    },
                 }))
                 .pipe(gulp.dest(build + '/assets/js'))
                 .pipe(browsersync.stream());
@@ -116,7 +124,16 @@ gulp.task("prod", () => {
                     }
                   }
                 ]
-              }
+            },
+            module: {
+              rules: [
+                {
+                  test: /\.css$/i,
+                  use: ["style-loader", "css-loader"],
+                },
+              ],
+            },
+              
         }))
         .pipe(gulp.dest(build + '/js'));
     

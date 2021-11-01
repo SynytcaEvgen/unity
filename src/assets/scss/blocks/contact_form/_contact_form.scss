@@ -1,0 +1,155 @@
+.contact_form{
+    min-height: 704px;
+    background-image: url(../img/from_bg.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    padding: 130px 0 100px;
+    position: relative;
+    z-index: 1;
+    &::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 0%, #FFFFFF 49.87%, rgba(255, 255, 255, 0.9) 100%);
+    }
+    &__title {
+        position: relative;
+        z-index: 2;
+        max-width: 568px;
+        margin: 0 auto 40px;
+        color: #000;
+        .text{
+            text-align: center;
+            &.second{
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+    }
+    .form{
+        position: relative;
+        z-index: 2;
+    }
+    
+}
+.form {
+    max-width: 370px;
+    margin: 0 auto;
+    .input_wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 20px;
+        position: relative;
+        label{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            color: #000;
+            margin-bottom: 5px;
+        }
+        input {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            color: #080808;
+            padding: 12px 20px 11px;
+            border: 1px solid $secondary;
+            background-color: #fff;
+            width: 100%;
+        }
+        &.checkbox{
+            margin-bottom: 40px;
+            .checkbox_input:checked ~ .check_text::after {
+                transform: scale(1);
+                transition: 0.3s ease;
+            }
+            .checkbox_input.no_valid ~ .check_text::before{
+                border-color: $primary;
+            }
+            .check_text {
+                padding-left: 40px;
+                position: relative;
+                white-space: normal;
+                cursor: pointer;
+                margin-bottom: 0;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    background-color: #fff;
+                    width: 19px;
+                    height: 19px;
+                    top: 0;
+                    left: 0;
+                    border: 1px solid $secondary;
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    background-color: $secondary;
+                    width: 15px;
+                    height: 15px;
+                    top: 3px;
+                    left: 3px;
+                    transform: scale(0);
+                    transition: 0.3s ease;
+
+                }
+            }
+           
+        }
+    }
+    .checkbox_input{
+        display: none;
+    }
+    input.btn{
+        color: #fff;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        padding: 22px 20px 21px;
+        background-color: $secondary;
+    }
+    // Flag plugin set def style
+    .iti{
+        &__selected-flag{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        &__arrow{
+            margin-left: 0;
+            border: 1px solid rgba(8, 8, 8, 0.4);
+            width: 6px;
+            height: 6px;
+            transform: rotate(45deg) translate(-25%, -25%);
+            border-top-color: transparent;
+            border-left-color: transparent;
+        }
+    }
+    .iti--separate-dial-code{
+        .iti__selected-dial-code{
+            margin-left: 8px;
+            margin-right: 10px;
+        }
+        .iti__selected-flag {
+            background: rgba(11, 34, 92, 0.05);
+        }
+
+    } 
+    .input_no_valid{
+        color: $primary;
+        font-size: 10px;
+        line-height: 15px;
+        position: absolute;
+        left: 0;
+        bottom: -17px;
+    }
+    // Flag plugin set def style
+
+}
+

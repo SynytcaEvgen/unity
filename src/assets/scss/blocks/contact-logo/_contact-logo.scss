@@ -1,12 +1,12 @@
 .contact_logo{
+    line-height:40px;
     &__list{
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 60px;
-
     }
     &__item{
-        
+        color: #fff;
     }
 }

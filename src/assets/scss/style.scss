@@ -4,10 +4,12 @@
 @import './reset-html';
 
 @import './blocks/header/header.scss';
-@import './blocks/bg-slider/bg-slider';
 @import './blocks/contact-logo/contact-logo';
-@import './blocks/main-content/main-content';
-@import './blocks/first-screen/first-screen';
+@import './blocks/benefits/benefits';
+@import './blocks/dispatch/dispatch';
+@import './blocks/question/question';
+@import './blocks/contact_form/contact_form';
+@import 'intl-tel-input/build/css/intlTelInput.css';
 
 @import './blocks/footer/footer';
 body{
@@ -31,6 +33,7 @@ body{
     width: 100%;
     line-height: 0;
     height: 100%;
+    overflow: hidden;
     img{
         width: 100%;
         object-fit: contain;
@@ -38,7 +41,7 @@ body{
 }
 .icon_wrapper{
     i{
-        color:#fff;
+        color:inherit;
         font-size: inherit;
     }
 }
@@ -53,6 +56,30 @@ body{
     line-height: 1.35;
     letter-spacing: 0.05em;
 }
+.title_block{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.05em;
+    color: inherit;
+}
+.def_text{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: inherit;
+}
 .uppercase{
     text-transform: uppercase;
+}
+
+.iti__flag {
+    background-image: url("path/to/flags.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .iti__flag {
+        background-image: url("path/to/flags@2x.png");
+    }
 }

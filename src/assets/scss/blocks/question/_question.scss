@@ -1,0 +1,41 @@
+.question{
+    padding: 60px 0;
+    background-color: $primary;
+    position: relative;
+    z-index: 2;
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 100%);
+        border: 160px solid transparent;
+        border-top: 70px solid $primary;
+    }
+    &__list{
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+   
+    }
+    &__item{
+        max-width: 370px;
+        .question__text{
+            .text{
+                display: block;
+                font-size: 18px;
+                line-height: 1.5;
+                color: #fff;
+                letter-spacing: 0.05em;
+                text-align: center;
+                text-transform: uppercase;
+                &:first-child{
+                   font-weight: 700;
+                }
+            }
+        }
+    }
+}
