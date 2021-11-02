@@ -59,37 +59,34 @@
 @media only screen and (max-width: 1439px) {
     .header {
 
-    &__wrapper {
-        padding-top: 40px;
-        padding-bottom: 40px;
-        .contact_logo {
-            margin-bottom: 40px;
-        }
-    }
-
-    &__content {
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-
-    &__logo {
-        font-size: 55px;
-        margin-bottom: 100px;
-        color: #fff;
-    }
-
-    &__slogan {
-        * {
-            margin-bottom: 10px;
-
-            &:last-child {
-                margin-bottom: 0;
+        &__wrapper {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            .contact_logo {
+                margin-bottom: 40px;
             }
         }
-    }
 
-    &__bg_slider {
-    }
+        &__content {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        &__logo {
+            font-size: 55px;
+            margin-bottom: 100px;
+            color: #fff;
+        }
+
+        &__slogan {
+            * {
+                margin-bottom: 10px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
     }
 }
 @media only screen and (max-width: 1200px) {

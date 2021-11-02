@@ -4,7 +4,7 @@ import { onlyNubmerInput } from './services/sumbol-separator';
 import sValidation from './services/simple-validation';
 
 import 'swiper/css';
-import 'intl-tel-input/build/css/intlTelInput.css';
+import 'intl-tel-input/build/css/intlTelInput.min.css';
 
 window.addEventListener('DOMContentLoaded', init);
 

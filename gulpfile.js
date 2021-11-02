@@ -99,9 +99,11 @@ gulp.task("prod", () => {
     gulp.src("./src/assets/img/**/*.*")
         .pipe(gulp.dest(build + "/assets/img"));
     gulp.src("./src/assets/icons/**/*.*")
-        .pipe(gulp.dest(build + "/assets/icons"));
+      .pipe(gulp.dest(build + "/assets/icons"));
+    gulp.src("./src/assets/fonts/**/*.*")
+      .pipe(gulp.dest(build + "/assets/fonts"));
 
-    gulp.src("./src/assets/js/main.js")
+    gulp.src("./src/assets/js/index.js")
         .pipe(webpack({
             mode: 'production',
             output: {
@@ -135,7 +137,7 @@ gulp.task("prod", () => {
             },
               
         }))
-        .pipe(gulp.dest(build + '/js'));
+        .pipe(gulp.dest(build + '/assets/js'));
     
     return gulp.src("./src/assets/scss/style.scss")
         .pipe(sass().on('error', sass.logError))
