@@ -551,6 +551,24 @@ table {
   transition: 0.4s ease;
 }
 
+@media only screen and (max-width: 992px) {
+  .contact_logo {
+    line-height: 30px;
+  }
+  .contact_logo__item {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .contact_logo {
+    line-height: 25px;
+  }
+  .contact_logo__item {
+    font-size: 12px;
+  }
+}
+
 .benefits {
   padding: 60px 75px;
   background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#F9F9F9));
