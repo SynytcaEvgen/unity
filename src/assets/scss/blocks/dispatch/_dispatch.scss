@@ -63,3 +63,10 @@
         }
     }
 }
+
+@media only screen and (max-width: 800px) {
+    .dispatch {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}
