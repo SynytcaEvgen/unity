@@ -94,7 +94,11 @@ gulp.task("watch", () => {
 gulp.task("build", gulp.parallel("copy-html", "copy-assets", "build-sass", "build-js"));
 
 gulp.task("prod", () => {
-    gulp.src("./src/index.html")
+  gulp.src("./src/index.html")
+        .pipe(fileinclude({
+                  prefix: '@@',
+                  basepath: '@file'
+              }))
         .pipe(gulp.dest(build));
     gulp.src("./src/assets/img/**/*.*")
         .pipe(gulp.dest(build + "/assets/img"));

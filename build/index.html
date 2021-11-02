@@ -4,7 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    @@include('./part/head_link.html')
+        <meta property="og:title" content="Unity Trucking Inc.">
+    <meta property="og:site_name" content="Unity Trucking Inc.">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="New fast growing company started by dispatch operators who have been
+    in business over 10 years">
+    <meta property="og:image" content="assets/img/Thumbnail.webp">
+    <meta property="og:image:width" content="968">
+    <meta property="og:image:height" content="504">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/svg">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js"></script>
     <!-- <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> -->
     <title>Unity Trucking Inc.</title>
 </head>
@@ -13,7 +24,38 @@
        <header class="header">
            <div class="header__wrapper">
                <div class="container">
-                   @@include('./part/contact_logo.html')
+                   <div class="contact_logo">
+       <div class="contact_logo__list">
+           <div class="contact_logo__item">
+               <a href="tel:+111111111" class="link_to">
+                   <div class="icon_wrapper">
+                       <i class="icon-phone"></i>
+                   </div>
+               </a>
+           </div>
+           <div class="contact_logo__item">
+               <a href="mailto:expample@gmail.com" class="link_to">
+                   <div class="icon_wrapper">
+                       <i class="icon-email"></i>
+                   </div>
+               </a>
+           </div>
+           <div class="contact_logo__item">
+               <a href="https://www.instagram.com" class="link_to">
+                   <div class="icon_wrapper">
+                       <i class="icon-instagram"></i>
+                   </div>
+               </a>
+           </div>
+           <div class="contact_logo__item">
+               <a href="https://www.facebook.com" class="link_to">
+                   <div class="icon_wrapper">
+                       <i class="icon-facebook"></i>
+                   </div>
+               </a>
+           </div>
+       </div>
+</div>
                    <div class="header__content">
                           <div class="header__logo">
                               <div class="icon_wrapper">
@@ -34,41 +76,62 @@
                  <!-- Additional required wrapper -->
                  <div class="swiper-wrapper">
                    <!-- Slides -->
-                       @@include('./part/slide_item.html',{
-                           "img": "Header_slide_0.webp",
-                           "img_767": "767_Header_slide_0.webp",
-                           "img_alt": "slide_1"
-                       })
-                       @@include('./part/slide_item.html',{
-                           "img": "Header_slide_1.webp",
-                           "img_767": "767_Header_slide_1.webp",
-                           "img_alt": "slide_2"
-                       })
-                       @@include('./part/slide_item.html',{
-                           "img": "Header_slide_2.webp",
-                           "img_767": "767_Header_slide_2.webp",
-                           "img_alt": "slide_3"
-                       })
-                       @@include('./part/slide_item.html',{
-                           "img": "Header_slide_3.webp",
-                           "img_767": "767_Header_slide_3.webp",
-                           "img_alt": "slide_4"
-                       })
-                       @@include('./part/slide_item.html',{
-                           "img": "Header_slide_4.webp",
-                           "img_767": "767_Header_slide_4.webp",
-                           "img_alt": "slide_5"
-                       })
-                       @@include('./part/slide_item.html',{
-                           "img": "Header_slide_5.webp",
-                           "img_767": "767_Header_slide_5.webp",
-                           "img_alt": "slide_6"
-                       })
-                       @@include('./part/slide_item.html',{
-                           "img": "Header_slide_6.webp",
-                           "img_767": "767_Header_slide_6.webp",
-                           "img_alt": "slide_7"
-                       })
+                       <div class="swiper-slide">
+    <div class="img_wrapper">
+        <picture>
+            <source srcset="assets/img/767_Header_slide_0.webp" media="(max-width: 767px)">
+            <img src="assets/img/Header_slide_0.webp" alt="slide_1">
+        </picture>
+    </div>
+</div>
+                       <div class="swiper-slide">
+    <div class="img_wrapper">
+        <picture>
+            <source srcset="assets/img/767_Header_slide_1.webp" media="(max-width: 767px)">
+            <img src="assets/img/Header_slide_1.webp" alt="slide_2">
+        </picture>
+    </div>
+</div>
+                       <div class="swiper-slide">
+    <div class="img_wrapper">
+        <picture>
+            <source srcset="assets/img/767_Header_slide_2.webp" media="(max-width: 767px)">
+            <img src="assets/img/Header_slide_2.webp" alt="slide_3">
+        </picture>
+    </div>
+</div>
+                       <div class="swiper-slide">
+    <div class="img_wrapper">
+        <picture>
+            <source srcset="assets/img/767_Header_slide_3.webp" media="(max-width: 767px)">
+            <img src="assets/img/Header_slide_3.webp" alt="slide_4">
+        </picture>
+    </div>
+</div>
+                       <div class="swiper-slide">
+    <div class="img_wrapper">
+        <picture>
+            <source srcset="assets/img/767_Header_slide_4.webp" media="(max-width: 767px)">
+            <img src="assets/img/Header_slide_4.webp" alt="slide_5">
+        </picture>
+    </div>
+</div>
+                       <div class="swiper-slide">
+    <div class="img_wrapper">
+        <picture>
+            <source srcset="assets/img/767_Header_slide_5.webp" media="(max-width: 767px)">
+            <img src="assets/img/Header_slide_5.webp" alt="slide_6">
+        </picture>
+    </div>
+</div>
+                       <div class="swiper-slide">
+    <div class="img_wrapper">
+        <picture>
+            <source srcset="assets/img/767_Header_slide_6.webp" media="(max-width: 767px)">
+            <img src="assets/img/Header_slide_6.webp" alt="slide_7">
+        </picture>
+    </div>
+</div>
                  </div>
                </div>
            </div>      
@@ -248,7 +311,38 @@
        </main>
        <footer class="footer">
            <div class="container">
-               @@include('./part/contact_logo.html')
+               <div class="contact_logo">
+       <div class="contact_logo__list">
+           <div class="contact_logo__item">
+               <a href="tel:+111111111" class="link_to">
+                   <div class="icon_wrapper">
+                       <i class="icon-phone"></i>
+                   </div>
+               </a>
+           </div>
+           <div class="contact_logo__item">
+               <a href="mailto:expample@gmail.com" class="link_to">
+                   <div class="icon_wrapper">
+                       <i class="icon-email"></i>
+                   </div>
+               </a>
+           </div>
+           <div class="contact_logo__item">
+               <a href="https://www.instagram.com" class="link_to">
+                   <div class="icon_wrapper">
+                       <i class="icon-instagram"></i>
+                   </div>
+               </a>
+           </div>
+           <div class="contact_logo__item">
+               <a href="https://www.facebook.com" class="link_to">
+                   <div class="icon_wrapper">
+                       <i class="icon-facebook"></i>
+                   </div>
+               </a>
+           </div>
+       </div>
+</div>
            </div>
        </footer>  
    </div>
