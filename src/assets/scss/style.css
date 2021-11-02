@@ -607,6 +607,8 @@ table {
   border: 1px solid rgba(11, 34, 92, 0.05);
   min-width: 170px;
   max-width: 170px;
+  min-height: 170px;
+  max-height: 170px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -843,7 +845,7 @@ table {
   background-image: url(../img/from_bg.webp);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 100% 100%;
+  background-size: auto 100%;
   padding: 130px 0 100px;
   position: relative;
   z-index: 1;
