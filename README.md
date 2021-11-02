@@ -1,1 +1,1 @@
-# food_js
+# CoreTeka test task 
