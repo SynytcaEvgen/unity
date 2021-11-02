@@ -707,6 +707,8 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-height: 170px;
+  min-height: 170px;
   gap: 15px;
   padding: 41px 38px 35px;
   border: 1px solid rgba(11, 34, 92, 0.05);
@@ -744,13 +746,13 @@ table {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #000;
-  margin-bottom: 5px;
 }
 
 .dispatch__item .descr .text.exp {
   font-size: 14px;
   line-height: 17px;
   color: rgba(0, 0, 0, 0.5);
+  margin-top: 5px;
 }
 
 .dispatch__item.last_two {
@@ -879,6 +881,7 @@ table {
 .contact_form__title .text.second {
   font-size: 18px;
   line-height: 22px;
+  margin-top: 5px;
 }
 
 .contact_form .form {
@@ -904,6 +907,10 @@ table {
   position: relative;
 }
 
+.form .input_wrapper.submit {
+  margin-bottom: 0;
+}
+
 .form .input_wrapper label {
   font-weight: 500;
   font-size: 12px;
@@ -917,7 +924,7 @@ table {
   font-size: 14px;
   line-height: 17px;
   color: #080808;
-  padding: 12px 20px 11px;
+  padding: 10px 20px 10px;
   border: 1px solid #0B225C;
   background-color: #fff;
   width: 100%;
@@ -989,7 +996,7 @@ table {
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
-  padding: 22px 20px 21px;
+  padding: 21px 20px 20px;
   background-color: #0B225C;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
